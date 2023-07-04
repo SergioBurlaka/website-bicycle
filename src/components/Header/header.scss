@@ -1,0 +1,184 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+
+  li {
+    margin: 0 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.05em;
+    color: #4d4959;
+
+    position: relative;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:nth-child(2) {
+      padding-right: 100px;
+    }
+    &:nth-child(3) {
+      padding-left: 100px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: #4d4959;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin: 4px -47px;
+      }
+    }
+  }
+}
+
+.header__row {
+  position: relative;
+  padding-top: 32px;
+
+  .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 32px;
+
+  div {
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background-color: #4d4959;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+  }
+
+  > :nth-child(1) {
+    top: 0;
+  }
+  > :nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  > :nth-child(3) {
+    bottom: 0;
+  }
+}
+
+.burger.active {
+  > :nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+}
+.burger.active {
+  > :nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+}
+.burger.active {
+  > :nth-child(2) {
+    transform: scale(0);
+  }
+}
+
+.header.open-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #4d4959;
+  background-color: #4d4959;
+  animation: slideBackMenu 1s ease-in-out forwards;
+  animation: slideBackMenuClose 1s ease-in-out forwards;
+
+  .burger > div {
+    background-color: white;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-top: 100px;
+
+    li {
+      color: white;
+      font-size: 1.5em;
+      padding: 40px 0 0 0;
+
+      transition: all 0.5s ease-in-out;
+    
+      animation: slideBackMenuItems 1s ease-in-out forwards;
+
+      @for $i from 0 through 4 {
+        &:nth-child(#{$i}) {
+          animation-delay: (100ms) * $i;
+        }
+      }
+
+      &:nth-child(2) {
+        &:after {
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          position: absolute;
+        }
+      }
+
+      &:after {
+        right: 50%;
+        bottom: -30%;
+        background-color: white;
+        margin: 0;
+        top: unset;
+      }
+    }
+  }
+}
+
+@keyframes slideBackMenu {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideBackMenuItems {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+
+.header {
+
+  .my-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
