@@ -55,8 +55,8 @@
 }
 
 .burger {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   position: relative;
   cursor: pointer;
   position: absolute;
@@ -89,14 +89,11 @@
     transform: rotate(45deg);
     top: 50%;
   }
-}
-.burger.active {
   > :nth-child(3) {
     transform: rotate(-45deg);
     top: 50%;
   }
-}
-.burger.active {
+
   > :nth-child(2) {
     transform: scale(0);
   }
@@ -110,7 +107,6 @@
   background-color: #4d4959;
   background-color: #4d4959;
   animation: slideBackMenu 1s ease-in-out forwards;
-  animation: slideBackMenuClose 1s ease-in-out forwards;
 
   .burger > div {
     background-color: white;
@@ -126,7 +122,7 @@
       padding: 40px 0 0 0;
 
       transition: all 0.5s ease-in-out;
-    
+
       animation: slideBackMenuItems 1s ease-in-out forwards;
 
       @for $i from 0 through 4 {
@@ -167,16 +163,16 @@
 
 @keyframes slideBackMenuItems {
   from {
-    transform: translateY(-100%);
+    opacity: 0;
+    transform: translateY(-400%);
   }
   to {
+    opacity: 1;
     transform: translateY(0px);
   }
 }
 
-
 .header {
-
   .my-container {
     padding-left: 32px;
     padding-right: 32px;
