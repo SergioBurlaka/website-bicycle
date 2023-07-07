@@ -34,7 +34,7 @@ function App() {
         </div>
         <div className="content">
           <div className="my-container">
-            <div className="box flex flex-col content-center">
+            <div className="box lg:pt-28 lg:pb-32 pb-12 pt-14 flex flex-col content-center">
               <img className=" mx-auto mt-0 mb-8" src={mainLogo} alt="" />
 
               <h2 className="title">A NEW GENERATION OF VINTAGE BIKE</h2>

@@ -1,6 +1,6 @@
 import mainLogo from "../../assets/img/logos/logo-1.png";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./header.scss";
 

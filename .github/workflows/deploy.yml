@@ -20,7 +20,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        uses: pnpm install
+        uses: bahmutov/pnpm-install@v1
 
       - name: Build project
         run: pnpm run build

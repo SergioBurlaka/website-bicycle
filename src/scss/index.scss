@@ -13,11 +13,8 @@ $minwidth: 320px;
   margin: 0 auto;
   padding: 0 32px;
 
- 
-
   @media screen and (max-width: 768px) {
     padding: 0 16px;
-
   }
 }
 
@@ -26,21 +23,8 @@ $minwidth: 320px;
   height: 100%;
 }
 
-// .page {
-//   position: absolute;
-
-//   width: 100px;
-//   height: 100px;
-//   top: 0;
-//   left: 0;
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .wrapper {
   height: 100%;
-
-  // overflow: hidden;
   min-height: 100%;
 }
 
@@ -53,10 +37,6 @@ $minwidth: 320px;
   background-position: center;
 }
 
-.main-screen {
-  // flex: 1 0 auto;
-}
-
 .title {
   font-size: 1.5em;
   font-weight: bold;
@@ -65,14 +45,14 @@ $minwidth: 320px;
   text-transform: uppercase;
 }
 
-.description{
+.description {
   text-align: center;
   font-size: 1.5em;
   color: #848789;
-
 }
 
-.box{
-  padding-top: 110px;
-  padding-bottom: 140px;
-}
+// @apply relative after:content-[""] after:absolute after:w-5 after:h-5 after:rotate-45 after:bottom-[-11px] after:z-10;
+
+// @apply relative after:content-[''] after:absolute after:w-5 after:h-5 after:bottom-[-11px] after:z-10 after:-translate-x-2/4 after:rotate-45 after:left-2/4;
+
+// @apply relative after:content-[""] after:absolute after:w-5 after:h-5 after:bottom-[-11px] after:z-10 after:-translate-x-2/4 after:rotate-45 after:bg-white after:left-2/4;
