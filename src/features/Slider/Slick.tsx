@@ -12,7 +12,8 @@ const Slick = () => {
     slidesToScroll: 1,
   };
   return (
-    <Slider {...settings}>
+    <div className="m-10">
+   <Slider {...settings}>
       <div className="item-container">
         <div className="flex flex-col items-center text-center mt-32 mb-16">
           <div className="mb-9">
@@ -59,6 +60,8 @@ const Slick = () => {
         </div>
       </div>
     </Slider>
+    </div>
+ 
   );
 };
 
