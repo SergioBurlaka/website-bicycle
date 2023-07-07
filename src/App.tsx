@@ -1,6 +1,9 @@
 import "./App.css";
 import "./scss/index.scss";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Header from "./components/Header/Header";
 
 import mainLogo from "./assets/img/icons/icon-1.png";
@@ -22,6 +25,8 @@ import cmalBanner_3_2 from "./assets/img/brands/smal-banner-3-2.png";
 import logo_5 from "./assets/img/logos/logo-5.png";
 
 import Card from "./components/Card/Card";
+
+import Slick from "./features/Slider/Slick";
 
 function App() {
   return (
@@ -126,6 +131,9 @@ function App() {
                 />
               </div>
             </div>
+          </div>
+          <div className="my-container">
+            <Slick />
           </div>
           repellendus laudantium voluptates alias adipisci. Optio. Sint, odio
           animi? Nesciunt quas dignissimos modi. Nemo ab eaque quasi ducimus nam

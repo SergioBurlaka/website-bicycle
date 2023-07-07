@@ -7,9 +7,7 @@ type CardType = {
 const Card = ({ title, imgPath, logo }: CardType) => {
   return (
     <div className=" h-full flex flex-col justify-between">
-      {/* @apply relative after:content-[""] after:absolute after:w-5 after:h-5 after:rotate-45 after:bottom-[-11px] after:z-10; */}
-
-      <div className=" bg-[#ffffff] relative after:content-[''] after:absolute after:w-5 after:h-5 after:bottom-[-11px] after:z-10 after:-translate-x-2/4 after:rotate-45 after:left-2/4 after:bg-white ">
+      <div className="h-full bg-[#ffffff] relative after:content-[''] after:absolute after:w-5 after:h-5 after:bottom-[-11px] after:z-10 after:-translate-x-2/4 after:rotate-45 after:left-2/4 after:bg-white ">
         <div className=" bg-[#ffffff]  h-full flex flex-col items-center xl:px-16 px-4 lg:px-8  pb-12 pt-14  ">
           <img className=" mx-auto mt-0 mb-8" src={logo} alt="" />
 
