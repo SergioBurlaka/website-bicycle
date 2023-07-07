@@ -1,4 +1,3 @@
-import React from "react";
 
 import Slider from "react-slick";
 import twitterBig from "../../assets/img/icons/social/twitter-big.png";
