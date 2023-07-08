@@ -6,20 +6,18 @@ import SliderItem from "./SlickItem";
 
 const Slick = () => {
   const settings = {
-    customPaging: () => {
-      return (
-        <div
-          style={{
-            width: "14px",
-            height: "14px",
-            border: "2px #a9afb3 solid",
-            borderRadius: "100%",
-            marginLeft: "10px",
-            marginRight: "10px",
-          }}
-        ></div>
-      );
-    },
+    customPaging: () => (
+      <div
+        style={{
+          width: "14px",
+          height: "14px",
+          border: "2px #a9afb3 solid",
+          borderRadius: "100%",
+          marginLeft: "10px",
+          marginRight: "10px",
+        }}
+      ></div>
+    ),
     dots: true,
     infinite: true,
     speed: 500,

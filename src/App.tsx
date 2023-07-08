@@ -28,6 +28,8 @@ import Card from "./components/Card/Card";
 
 import Slick from "./features/Slider/Slick";
 
+import Shop from "./features/Shop/Shop";
+
 function App() {
   return (
     <div className="wrapper">
@@ -134,6 +136,9 @@ function App() {
           </div>
           <div className="my-container">
             <Slick />
+          </div>
+          <div>
+            <Shop />
           </div>
           repellendus laudantium voluptates alias adipisci. Optio. Sint, odio
           animi? Nesciunt quas dignissimos modi. Nemo ab eaque quasi ducimus nam
