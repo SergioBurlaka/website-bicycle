@@ -51,6 +51,14 @@ $minwidth: 320px;
   color: #848789;
 }
 
+.slick-dots{
+  .slick-active{
+    > div{
+      background-color: #a9afb3;
+    }
+  }
+}
+
 // @apply relative after:content-[""] after:absolute after:w-5 after:h-5 after:rotate-45 after:bottom-[-11px] after:z-10;
 
 // @apply relative after:content-[''] after:absolute after:w-5 after:h-5 after:bottom-[-11px] after:z-10 after:-translate-x-2/4 after:rotate-45 after:left-2/4;
