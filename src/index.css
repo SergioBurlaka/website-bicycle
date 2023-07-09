@@ -9,25 +9,29 @@
   height: 100%;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
 
-
-
-a, a:visited {
-  text-decoration: none;
+input:focus {
+  border: none;
 }
 
+textarea:focus, input:focus{
+  outline: 2px solid #d3d7d9;
+}
 
+a,
+a:visited {
+  text-decoration: none;
+}
 
 ul li {
   list-style: none;
 }
-
 
 @font-face {
   font-family: "Lato";

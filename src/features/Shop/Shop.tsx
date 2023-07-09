@@ -46,4 +46,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;z
+export default Shop;

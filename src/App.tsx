@@ -29,6 +29,7 @@ import Card from "./components/Card/Card";
 import Slick from "./features/Slider/Slick";
 
 import Shop from "./features/Shop/Shop";
+import Contacts from "./features/Contacts/Contacts";
 
 function App() {
   return (
@@ -139,6 +140,15 @@ function App() {
           </div>
           <div>
             <Shop />
+          </div>
+          <div className="bg-[#282f35] py-20 px-4 flex items-center justify-center">
+            <button className="text-[1.2em] hover:bg-[#64c29e] uppercase cursor-pointer text-[white] px-6 md:px-14 py-3 border-2 border-solid border-[#94979a]">
+              DISCOVER THE SHOP
+            </button>
+          </div>
+
+          <div>
+          <Contacts />
           </div>
           repellendus laudantium voluptates alias adipisci. Optio. Sint, odio
           animi? Nesciunt quas dignissimos modi. Nemo ab eaque quasi ducimus nam

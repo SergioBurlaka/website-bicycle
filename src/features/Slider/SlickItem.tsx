@@ -4,7 +4,7 @@ import { type SliderContenttype } from "./sliderContent";
 
 const SlickItem = ({ title, time, content }: SliderContenttype) => {
   return (
-    <div className="item-container">
+    <div className="item-container px-2">
       <div className="flex flex-col items-center text-center mt-32 tracking-widest	">
         <div className="mb-9">
           <img src={twitterBig} alt="" />
